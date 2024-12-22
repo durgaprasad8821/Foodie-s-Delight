@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Foodie's Delight</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <h1>Your Cart</h1>
+    <div class="cart-container">
+        
+
+        <!-- Cart Items -->
+        <div class="cart-item">
+        
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            Grand Total: <span id="grand-total">$34.97</span>
+        </div>
+        <canvas id="confetti"></canvas>
+        <!-- Checkout Button -->
+        <button class="checkout-button button-53" role="button">Proceed to Checkout</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="cart.js"> 
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Products Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Foodie's Delight</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <h1>Welcome to Foodie's Delight</h1>
+    <p>Explore the freshest and finest food products!</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+    </div>
+    <div>
+      <button class="btn-more"> <a href="product.html"> More Item </a> </button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>We are passionate about bringing you the best organic and natural food products sourced from trusted farmers and suppliers.</p>
+  </section>
+
+  
+
+        <script type="module" src="app.js">
+      
+        </script>
+</body>
+</html>

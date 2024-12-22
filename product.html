@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Foodie's Delight</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <h1>Food Products</h1>
+
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search for products...">
+        <select id="category-filter">
+            <option value="All">All</option>
+        </select>
+    </div>
+
+   
+    <div class="product-container" id="product-container"></div>
+
+    <script type="module" src="product.js">
+        function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.toggle('show');
+          }
+    </script>
+</body>
+</html>
